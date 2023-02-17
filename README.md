@@ -4,6 +4,7 @@
 Auf dieser Seite steht die kostenlose Bibelübersetzung zum Download bereit.
 Die Übersetzung steht nur als **.sqlite3-Datei** zur Verfügung.
 
+Das SQlite3-Format ist für die Bibelapps **MySword** und **MyBibel(Zone)** geeignet! 
 ### Andere Formate
 Wer mag kann sich folgende Tools herunterladen und in andere Formate konventieren:
 1. [Simple Bible Reader](https://trumpet-call.org/simplebiblereader/)
