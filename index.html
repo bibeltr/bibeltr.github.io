@@ -112,7 +112,7 @@ p{
     
     <script>
         // Get the bible data from the json file
-        let bibleData = fetch('https://raw.githubusercontent.com/anoani/bibeltr.github.io/main/bible.json').then(res => res.json());
+        let bibleData = fetch('bibel.json').then(res => res.json());
       
         // When the data is loaded, populate the select element with the bible books
         bibleData.then(data => {
