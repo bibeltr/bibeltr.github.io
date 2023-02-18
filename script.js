@@ -6,6 +6,7 @@ bibleData.then(data => {
   let select = document.querySelector('#bibleBook');
   let chaptersList = document.querySelector('#chapters');
 
+
   data.forEach(book => {
     let bookOption = document.createElement('option');
     bookOption.value = book.book_number;
@@ -63,29 +64,13 @@ bibleData.then(data => {
       });
     }
   });
+});
 
-  // Function to search for a verse by keyword
-  let searchButton = document.querySelector('#searchButton');
-  searchButton.addEventListener('click', () => {
-    let searchInput = document.querySelector('#searchInput');
-    let keyword = searchInput.value.toLowerCase();
-    let versesList = document.querySelector('#verses');
-    let versesHTML = '';
 
-    data.forEach(book => {
-      book.chapters.forEach(chapter => {
-        chapter.verses.forEach(verse => {
-          if (verse.verse_text.toLowerCase().includes(keyword)) {
-            versesHTML += `<p><b>${book.book_name} ${chapter.chapter_number}:${verse.verse_number}</b> ${verse.verse_text}</p>`;
-          }
-        });
-      });
-    });
+        // Funktionen für die Webseite
 
-    if (versesHTML == '') {
-      versesHTML = '<p>No verses found.</p>';
-    }
+        // Nachoben-Button
 
-    versesList.innerHTML = versesHTML;
-  });
+document.querySelector('#toTopButton').addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 });
