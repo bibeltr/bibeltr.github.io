@@ -2,11 +2,8 @@
 <html>
 <head>
     <meta name="description" content="Altes Testament: Elberfelder 1905, sprachliche Überarbeitung und Korrektur. Kostenlos zum Herunterladen">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
@@ -17,15 +14,47 @@
     
     <div id="container">
 
-        <h1 style="text-align: center;">Deutsche Bibel 2023</h1>
-        <p><b>Achtung:</b> Die Seite befindet sich ständig im Aufbau und erscheinen immer wieder mal neue Funktionen.</p>
-        <p><b>Altes Testament:</b> Elberfelder 1905, sprachliche Überarbeitung und Korrektur</p>
-        <p><b>Neues Testament:</b> Textus Receptus 1894 deutsch</p>
-        <p><b>Version:</b> 2023.02.01</p>
-        <p><b>Download:</b> <a href="https://github.com/bibeltr/bibeltr.github.io/releases">Auf der Github-Seite</a></p>
-        <br>
-        
-        <div align="center" class="sticky-nav">
+    <h1 style="text-align: center;">Deutsche Bibel 2023</h1>
+ 
+<!-- HTML-Code für den Bibelinhalt -->
+<div class="row margin-top" style="text-align:center;margin:auto 0;">
+    <div class="d-grid gap-2">
+      <button type="button" class="btn btn-light" style="color:#000;" data-bs-toggle="collapse" data-bs-target="#collapse-b1" aria-expanded="false" aria-controls="collapse-b1">
+Info      
+</button>
+  </div>
+
+    <div class="d-grid gap-2">
+      <button type="button" class="btn btn-light" style="color:#000;" data-bs-toggle="collapse" data-bs-target="#collapse-b2" aria-expanded="false" aria-controls="collapse-b2">
+Platzhalter
+      </button>
+  </div>
+
+</div>
+
+<div id="myGroup">  <!-- Add the parent id here -->
+
+  <div class="collapse" id="collapse-b1"  data-bs-parent="#myGroup">
+    <div class="card card-body">
+      <p><b>Achtung:</b> Die Seite befindet sich ständig im Aufbau und erscheinen immer wieder mal neue Funktionen.</p>
+      <p><b>Altes Testament:</b> Elberfelder 1905, sprachliche Überarbeitung und Korrektur</p>
+      <p><b>Neues Testament:</b> Textus Receptus 1894 deutsch</p>
+      <p><b>Version:</b> 2023.02.01</p>
+      <p><b>Download:</b> <a href="https://github.com/bibeltr/bibeltr.github.io/releases">Auf der Github-Seite</a></p>
+      <br>    </div>
+  </div>
+
+  <div class="collapse" id="collapse-b2" data-bs-parent="#myGroup">
+    <div class="card card-body">
+      Platzhalter    </div>
+  </div>
+  
+</div>
+
+
+
+
+<div align="center" class="sticky-nav">
           <select id="bibleBook">
             <option value="">- Buch auswählen -</option>
           </select>
@@ -35,20 +64,20 @@
           </select>
           
         </div>
-    
+
         <div id="verses"></div>
-    
+       
         <br>
-        <p><b>Copyright:</b> public domain</p>
+        <p><b>Copyright:</b> public domain. Das Wort Gottes hat kein Copyright</p>
         <button id="toTopButton">To the top</button>
     
     </div>
 
 
   <script src="script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+  
 </body>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
 </html>
