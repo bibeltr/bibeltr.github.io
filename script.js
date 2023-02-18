@@ -51,7 +51,7 @@ bibleData.then(data => {
           versesHTML += `<h3>${book.book_name} ${chapter.chapter_number}</h3>`;
 
           chapter.verses.forEach(verse => {
-            versesHTML += `<p><b>${book.book_name} ${chapter.chapter_number}:${verse.verse_number}</b> ${verse.verse_text}</p>`;
+            versesHTML += `<p><strong style="color: #0051ff;">${book.book_name} ${chapter.chapter_number}:${verse.verse_number}</strong> ${verse.verse_text}</p>`;
           });
 
           versesList.innerHTML = versesHTML;
