@@ -2,11 +2,29 @@
   }
 		body{
 			background-color: #f0f0f0;
-			margin: 0 auto;
+			margin: 0;
 			padding: 0;
-			font-family: sans-serif;
+			display: flex;
+			flex-direction: column;
 		}
-
+		html, body {
+			height: 100%;
+		  }
+		  
+		  #content {
+			flex: 1;
+		  }
+		  
+		  /* Hier kannst du den Inhalt deiner Webseite stylen */
+		  /* Vollbild-Styles */
+@media screen and (min-width: 768px) {
+	html, body {
+	  height: 100%;
+	}
+	#content {
+	  min-height: 100%;
+	}
+  }
 		#container{
       max-width: 800px;
 			margin: 20px auto;
@@ -89,4 +107,87 @@ p{
 	bottom: 20px;
 	right: 20px;
   }
-	
+  #chapterNavigation {
+	position: fixed;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	z-index: 1000;
+  }
+  
+  .scrollToTopButton {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 1000;
+  }
+  #chapter-navi {
+    position: fixed;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+#chapter-navi h3 {
+    margin-top: 0;
+}
+
+#chapter-navi ul {
+    list-style: none;
+    margin-top: 5px;
+    padding-left: 0;
+}
+
+#chapter-navi li {
+    margin-bottom: 5px;
+}
+
+#chapter-navi a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+
+#chapter-navi a:hover {
+    text-decoration: underline;
+}
+
+#back-to-top-button {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#back-to-top-button:hover {
+    background-color: #333;
+}
+.sticky-nav {
+	position: sticky;
+	top: 0;
+	z-index: 1;
+    background-color: rgba(255, 255, 255, 0.5); /* ändern Sie den Alphawert, um die Transparenz anzupassen */
+	border: #b8b8b8 dashed 1px;;
+}
+
+.sticky-nav select {
+	display: inline-block;
+	margin: 10px;
+	font-weight: ;
+}
+select{
+	border: #535353 dashed 1px;;
+	width: 300px;
+	background-color: rgba(255, 255, 255, 0.7); /* ändern Sie den Alphawert, um die Transparenz anzupassen */
+
+
+}
