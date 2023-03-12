@@ -3,7 +3,7 @@ const chapterSelect = document.querySelector('#bibleChapter');
 const versesList = document.querySelector('#verses');
 
 // Load bible data
-fetch('https://bibeltr.github.io/bibel.json')
+fetch('https://bibeltr.github.io/f35bibel/bibel.json')
   .then(res => res.json())
   .then(data => {
     // Populate the book select
